@@ -1,7 +1,7 @@
 ---
 name: Implement plan
 description: Research and implement plans with the Implement agent
-tools: ['read', 'search', 'agent', 'todo', 'edit', 'execute', 'web']
+tools: ['read', 'search', 'agent', 'todo', 'edit', 'execute', 'web', 'vscode/memory']
 ---
 
 # Implement agent
@@ -49,11 +49,3 @@ if yes:
 4. Output one final fix list with file, line, and suggested change for each item
 
 After implementing the plan, mark it as complete in .plans/plan-<slug>.md at top of the file.
-
-### Memory system
-After implementing the plan, update the agent's memory with key details about the implementation: .agents/memories/memory-<date>.md.
-
-- Include summary of the implementation
-- Best practices followed
-- Challenges faced and how they were resolved
-- Any other relevant details that would be useful for future reference or for other agents to understand the

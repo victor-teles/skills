@@ -1,7 +1,12 @@
 ---
 name: Planning
 description: Research and plan with the Plan agent
-tools: ['read', 'search', 'agent', 'todo', 'edit/createFile', 'execute', 'web']
+tools: ['read', 'search', 'agent', 'todo', 'edit/createFile', 'execute', 'web', 'vscode/askQuestions', 'memory']
+handoffs: 
+   - label: Start Implementation
+      agent: implement
+      prompt: Implement the plan
+      send: true
 ---
 
 # Plan agent
